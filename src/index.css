@@ -1,1 +1,30 @@
 @import "tailwindcss";
+@import url('https://googleapis.com');
+
+html {
+    font-size: clamp(12px, 33.3VW, 16px);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    
+    scrollbar-gutter: stable;
+    box-sizing: border-box;
+
+    overflow-x: hidden;
+}
+
+:root {
+    --text-main: #6b6b5e;
+    --text-bold: #2c2c2a;
+
+    --bg-main: #fffcf7;
+    --bg-dark: #C0C37F;
+    
+    --bronze: #C4956A;
+
+    --g1: #D8DDA8;
+    --g2: #99A558;
+    --g3: #909632;
+    --g4: #41521E;
+    --g5: #27301B;
+    --g6: #d3d3d3;
+}
