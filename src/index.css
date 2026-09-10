@@ -1,15 +1,13 @@
 @import "tailwindcss";
-@import url('https://googleapis.com');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@theme {
+  --font-sans: 'Montserrat', sans-serif;
+}
 
 html {
-    font-size: clamp(12px, 33.3VW, 16px);
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    
-    scrollbar-gutter: stable;
-    box-sizing: border-box;
-
-    overflow-x: hidden;
+    font-size: clamp(14px, 1vw + 10px, 16px);
+    font-family: var(--font-sans);
 }
 
 :root {
