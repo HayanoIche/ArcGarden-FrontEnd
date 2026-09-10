@@ -1,15 +1,17 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Footer from './components/Footer/Footer.tsx';
-import Header from "./components/Header/Header.tsx";
+import LayoutBase from './layouts/LayoutBase.tsx';
+
 import Home from './pages/Home';
 
-export default function App() {
+export default function App()
+{
   return (
     <BrowserRouter>
-        <Header />
-        <Routes>
+      <Routes>
+        <Route element={<LayoutBase />}>
           <Route path="/" element={<Home />} />
-        </Routes>
+        </Route>
+      </Routes>
     </BrowserRouter>
   );
 }
