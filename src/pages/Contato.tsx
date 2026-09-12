@@ -1,13 +1,13 @@
 function Contato() {
   return (
     <main className="bg-white">
-      <section className="mx-auto w-full max-w-6xl px-6 py-16">
+      <section className="mx-auto w-full max-w-6xl px-6 py-12">
         <div>
-          <h2 className="mb-3 text-3xl font-bold text-gray-900">
-            Fale <em className="text-green-600 not-italic">conosco</em>
+          <h2 className="mb-3 text-center text-4xl font-bold text-gray-900">
+            Fale <em className="text-gray-900">conosco</em>
           </h2>
 
-          <p className="mb-8 text-gray-600">
+          <p className="mb-8 text-center font-semibold text-gray-600">
             Envie suas dúvidas, sugestões ou feedback sobre o ArcGarden!
           </p>
 
