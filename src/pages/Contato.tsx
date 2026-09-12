@@ -1,24 +1,24 @@
 function Contato() {
   return (
-    <main className="bg-white">
-      <section className="mx-auto w-full max-w-6xl px-6 py-12">
+    <main className="bg-[#fffcf7]">
+      <section className="mx-auto w-full max-w-6xl px-6 py-16">
         <div>
-          <h2 className="mb-3 text-center text-4xl font-bold text-gray-900">
-            Fale <em className="text-gray-900">conosco</em>
+          <h2 className="mb-4 text-center text-5xl font-bold text-gray-900">
+            Fale <em>conosco</em>
           </h2>
 
           <p className="mb-8 text-center font-semibold text-gray-600">
             Envie suas dúvidas, sugestões ou feedback sobre o ArcGarden!
           </p>
 
-          <form className="mx-auto flex w-full max-w-sm flex-col gap-4">
+          <form className="mx-auto flex w-full max-w-xs flex-col gap-4">
             <div className="flex flex-col gap-1">
               <label className="text-sm font-semibold text-gray-900">
                 Nome completo
               </label>
 
               <input
-                className="rounded-xl border-2 border-lime-200 px-4 py-3 outline-none focus:border-lime-500"
+                className="rounded-xl border-2 border-[#d8dda8] bg-[#fffcf7] px-4 py-3 outline-none focus:border-[#41521e]"
                 type="text"
                 placeholder="Seu nome"
                 required
@@ -31,7 +31,7 @@ function Contato() {
               </label>
 
               <input
-                className="rounded-xl border-2 border-lime-200 px-4 py-3 outline-none focus:border-lime-500"
+                className="rounded-xl border-2 border-[#d8dda8] bg-[#fffcf7] px-4 py-3 outline-none focus:border-[#41521e]"
                 type="email"
                 placeholder="seu@email.com"
                 required
@@ -44,7 +44,7 @@ function Contato() {
               </label>
 
               <select
-                className="rounded-xl border-2 border-lime-200 px-4 py-3 outline-none focus:border-lime-500"
+                className="rounded-xl border-2 border-[#d8dda8] bg-[#fffcf7] px-4 py-3 outline-none focus:border-[#41521e]"
                 required
               >
                 <option value="">Selecione</option>
@@ -60,21 +60,21 @@ function Contato() {
               </label>
 
               <textarea
-                className="min-h-32 resize-y rounded-xl border-2 border-lime-200 px-4 py-3 outline-none focus:border-lime-500"
+                className="min-h-32 resize-y rounded-xl border-2 border-[#d8dda8] bg-[#fffcf7] px-4 py-3 outline-none focus:border-[#41521e]"
                 placeholder="Escreva sua mensagem"
                 required
               />
             </div>
 
             <button
-              className="w-full rounded-xl bg-green-900 px-4 py-3 font-semibold text-white hover:bg-green-800"
+              className="w-full rounded-xl bg-[#41521e] px-4 py-3 font-semibold text-white hover:bg-[#344218]"
               type="submit"
             >
               Enviar mensagem
             </button>
           </form>
 
-          <div className="mx-auto mt-4 w-full max-w-sm rounded-2xl bg-lime-100 p-6">
+          <div className="mx-auto mt-4 w-full max-w-xs rounded-2xl bg-[#d8dda8] p-6">
             <h3 className="mb-3 text-lg font-bold text-gray-900">
               Informações
             </h3>
