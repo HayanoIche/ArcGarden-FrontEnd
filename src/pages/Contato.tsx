@@ -66,10 +66,27 @@ function Contato() {
               />
             </div>
 
-            <button type="submit">
+            <button
+              className="w-full rounded-xl bg-green-900 px-4 py-3 font-semibold text-white hover:bg-green-800"
+              type="submit"
+            >
               Enviar mensagem
             </button>
           </form>
+
+          <div className="mx-auto mt-4 w-full max-w-sm rounded-2xl bg-lime-100 p-6">
+            <h3 className="mb-3 text-lg font-bold text-gray-900">
+              Informações
+            </h3>
+
+            <p className="text-sm font-semibold text-gray-600">
+              E-mail
+            </p>
+
+            <p className="mt-4 text-center text-sm font-semibold text-gray-600">
+              oarcgarden@gmail.com
+            </p>
+          </div>
         </div>
       </section>
     </main>
