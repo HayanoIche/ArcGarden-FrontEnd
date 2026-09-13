@@ -52,73 +52,50 @@ export default function Integrantes()
                 Conheça os integrantes do Arcgarden
             </p>
 
-            <div>
+            <div className="flex flex-wrap justify-center gap-8 w-full max-w-6xl">
+        {integrantes.map((membro) => (
+          <div
+            key={membro.rm}
+            className="bg-[var(--g1)] border-4 border-[var(--g4)] rounded-2xl p-6 flex flex-col items-center w-full sm:w-72 shadow-sm transition-transform hover:-translate-y-1"
+          >
+            <img
+              src={membro.foto}
+              className="w-36 h-36 rounded-full object-cover border-2 border-[var(--g4)] mb-4"
+            />
 
-            <div>
-            <img src="src/assets/integrantes/franco.jpeg" width="150"/>
-
-            <h3>Franco Jared Marquina Blas</h3>
-            <p><strong>RM:</strong> 572901</p>
-            <p><strong>Turma:</strong> 1TDSPK</p>
-
-            <p>
-                <a href="https://www.linkedin.com/in/franco-jared-marquina-blas-b67851303/" target="_blank">LinkedIn</a> |
-                <a href="https://github.com/Fmarquina" target="_blank">GitHub</a>
+            <h3 className="text-xl font-bold text-[var(--text-bold)] text-center mb-2">
+              {membro.nome}
+            </h3>
+            <p className="text-sm text-[var(--text-main)] mb-1">
+              <strong className="text-[var(--text-bold)]">RM:</strong> {membro.rm}
             </p>
-        </div>
-
-        <div >
-            <img src="src/assets/integrantes/igor.jpeg" alt="Foto do integrante" width="150"/>
-
-            <h3>Igor Mateus da Silva</h3>
-            <p><strong>RM:</strong> 571751</p>
-            <p><strong>Turma:</strong> 1TDSPK</p>
-
-            <p>
-                <a href="https://www.linkedin.com/in/igor-mateus-da-silva-4b05013ba/" target="_blank">LinkedIn</a> |
-                <a href="https://github.com/HayanoIche" target="_blank">GitHub</a>
+            <p className="text-sm text-[var(--text-main)] mb-4">
+              <strong className="text-[var(--text-bold)]">Turma:</strong> {membro.turma}
             </p>
-        </div>
 
-        <div >
-            <img src="src/assets/integrantes/sam.jpeg" alt="Foto do integrante" width="150"/>
+            <div className="flex gap-2 text-sm font-bold text-[var(--g4)]">
+              <a
+                href={membro.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[var(--g3)] transition-colors no-underline"
+              >
+                LinkedIn
+              </a>
+              <span>|</span>
+              <a
+                href={membro.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[var(--g3)] transition-colors no-underline"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
 
-            <h3>Sam Giulian Altoe</h3>
-            <p><strong>RM:</strong> 570332</p>
-            <p><strong>Turma:</strong> 1TDSPK</p>
-
-            <p>
-                <a href="https://www.linkedin.com/in/sam-giulian-altoe-758a733b2/" target="_blank">LinkedIn</a> |
-                <a href="https://github.com/Sammer-07" target="_blank">GitHub</a>
-            </p>
-        </div>
-
-        <div>
-            <img src="src/assets/integrantes/marcela.jpeg" alt="Foto do integrante" width="150"/>
-
-            <h3>Marcela Batista Teixeira</h3>
-            <p><strong>RM:</strong> 574069</p>
-            <p><strong>Turma:</strong> 1TDSPK</p>
-
-            <p>
-                <a href="https://www.linkedin.com/in/marcelabteixeira/" target="_blank">LinkedIn</a> |
-                <a href="https://github.com/wonbindasilva" target="_blank">GitHub</a>
-            </p>
-        </div>
-
-        <div >
-            <img src="src/assets/integrantes/matheus.jpeg" alt="Foto do integrante" width="150"/>
-
-            <h3>Matheus Pereira Vidal</h3>
-            <p><strong>RM:</strong> 573327</p>
-            <p><strong>Turma:</strong> 1TDSPK</p>
-            
-            <p>
-                <a href="https://linkedin.com/in/matheus-pereira-8700893b3" target="_blank">LinkedIn</a> |
-                <a href="https://github.com/pereirinh44" target="_blank">GitHub</a>
-            </p>
-        </div>
     </div>
-    </div>
-    );
+  );
 }
