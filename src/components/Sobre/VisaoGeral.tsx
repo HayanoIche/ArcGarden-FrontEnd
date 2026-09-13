@@ -9,7 +9,7 @@ const items = [
 
 export default function VisaoGeral() {
   return (
-    <div className="flex flex-col items-center w-full max-w-4xl mt-16">
+    <div className="flex flex-col items-center w-full max-w-5xl mt-16">
       <h2 className="font-bold text-[var(--text-bold)] text-2xl lg:text-3xl mb-8 text-center">
         Visão geral
       </h2>
@@ -20,7 +20,7 @@ export default function VisaoGeral() {
             key={item.title}
             title={item.title}
             text={item.text}
-            className="flex flex-col items-center justify-center text-center bg-[var(--g1)] rounded-xl p-4 w-[calc(50%-0.5rem)] lg:w-52"
+            className="flex flex-col items-center justify-center text-center bg-[var(--g1)] rounded-xl p-4 w-[calc(50%-0.5rem)] md:w-[calc(50%-0.5rem)] lg:w-56"
             titleClassName="font-bold text-[var(--text-bold)] text-sm"
             textClassName="font-bold text-[var(--text-main)] text-xs"
           />
