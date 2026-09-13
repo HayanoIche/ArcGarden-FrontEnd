@@ -7,17 +7,17 @@ export default function Sobre() {
           Sobre o projeto
         </span>
 
-        <h2 className="font-bold text-[var(--text-bold)] text-3xl lg:text-5xl mb-2">
+        <h2 className="font-bold text-[var(--text-bold)] text-5xl lg:text-5xl mb-2">
           O que é o{' '}
           <em
             style={{ fontFamily: 'var(--font-spectral)' }}
-            className="not-italic text-[var(--g3)]"
+            className="italic text-[var(--g3)]"
           >
             Arcgarden
           </em>
         </h2>
 
-        <p className="font-bold text-[var(--text-main)] max-w-2xl">
+        <p className="font-bold text-[var(--text-main)] mt-3 max-w-lg">
           Uma solução gamificada que transforma ações sustentáveis do dia a dia
           em um jardim virtual dentro da Soul Up
         </p>
