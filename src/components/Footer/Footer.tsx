@@ -8,7 +8,7 @@ export default function Footer()
         
             {/* COPYRIGHT */}
             <p className="text-center md:text-left tracking-wide m-0">
-                ©Arcgarden - Challenge FIAP 2026
+                © Arcgarden - Challenge FIAP 2026
             </p>
 
             {/* NAVEGAÇÃO */}
