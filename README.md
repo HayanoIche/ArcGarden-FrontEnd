@@ -66,7 +66,7 @@ links das redes sociais:
 - Github: https://github.com/Fmarquina
 - Linkedin: https://www.linkedin.com/in/franco-jared-marquina-blas-b67851303/
 
-### Sam Giulian Altoe - 1TDSPK - 
+### Sam Giulian Altoe - 1TDSPK - 570332
 
 - Github: https://github.com/Sammer-07
 - Linkedin: https://www.linkedin.com/in/sam-giulian-altoe-758a733b2/

@@ -9,7 +9,7 @@ export default function Integrantes()
             <div>
 
             <div>
-            <img src="../images/integrantes/danielle.jpeg" alt="Foto do integrante" width="150"/>
+            <img src="src/assets/integrantes/franco.jpeg" width="150"/>
 
             <h3>Franco Jared Marquina Blas</h3>
             <p><strong>RM:</strong> 572901</p>
@@ -22,7 +22,7 @@ export default function Integrantes()
         </div>
 
         <div >
-            <img src="../images/integrantes/igor.jpeg" alt="Foto do integrante" width="150"/>
+            <img src="src/assets/integrantes/igor.jpeg" alt="Foto do integrante" width="150"/>
 
             <h3>Igor Mateus da Silva</h3>
             <p><strong>RM:</strong> 571751</p>
@@ -34,8 +34,21 @@ export default function Integrantes()
             </p>
         </div>
 
+        <div >
+            <img src="src/assets/integrantes/sam.jpeg" alt="Foto do integrante" width="150"/>
+
+            <h3>Sam Giulian Altoe</h3>
+            <p><strong>RM:</strong> 570332</p>
+            <p><strong>Turma:</strong> 1TDSPK</p>
+
+            <p>
+                <a href="https://www.linkedin.com/in/sam-giulian-altoe-758a733b2/" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/Sammer-07" target="_blank">GitHub</a>
+            </p>
+        </div>
+
         <div>
-            <img src="../images/integrantes/marcela.jpeg" alt="Foto do integrante" width="150"/>
+            <img src="src/assets/integrantes/marcela.jpeg" alt="Foto do integrante" width="150"/>
 
             <h3>Marcela Batista Teixeira</h3>
             <p><strong>RM:</strong> 574069</p>
@@ -48,7 +61,7 @@ export default function Integrantes()
         </div>
 
         <div >
-            <img src="../images/integrantes/matheus.jpeg" alt="Foto do integrante" width="150"/>
+            <img src="src/assets/integrantes/matheus.jpeg" alt="Foto do integrante" width="150"/>
 
             <h3>Matheus Pereira Vidal</h3>
             <p><strong>RM:</strong> 573327</p>
