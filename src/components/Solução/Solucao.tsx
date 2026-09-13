@@ -2,17 +2,17 @@
 export default function Solucao()
 {
     return (
-        <div>
-            <section>
-                <span>
+        <div className="flex flex-col items-center w-full">
+            <section className="flex flex-col items-center py-18 px-8 md:py-18 md:px-6 w-full box-border">
+                <span className="bg-[var(--g1)] text-[var(--g4)] text-[0.85rem] font-bold py-1 px-4 rounded-full mb-4">
                     Conheça o projeto
                 </span>
                 
-                <h2>
-                    Como é o <em> Arcgarden </em>
+                <h2 className="text-4xl md:text-5xl font-bold text-[var(--text-bold)] text-center mb-2">
+                    Como é o <em className="font-['Spectral',serif] italic text-[var(--g3)]">Arcgarden</em>
                 </h2>
                 
-                <p>
+                <p className="text-base text-[var(--text-main)] max-w-[40rem] mb-10">
                     UI do aplicativo
                 </p>
             </section>
