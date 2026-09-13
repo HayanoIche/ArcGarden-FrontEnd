@@ -17,21 +17,29 @@ export default function Solucao()
                 </p>
             </section>
 
-            <section>
-                <div>
-                    <h2>
-                        exemplo da UI do app
+            <section className="flex flex-col items-center md:flex-row gap-10 pb-20">
+                <div className="flex flex-col items-center gap-8">
+                    <h2 className="text-2xl font-bold text-[var(--text-main)] text-center">
+                        Exemplo da UI do app
                     </h2>
                     
-                    <img src="src/assets/solução/ui.png" alt="" id="ui" />
+                    <img
+                        src="src/assets/solução/ui.png"
+                        alt="Exemplo da interface do usuário do aplicativo"
+                        className="w-full max-w-[25rem] h-auto object-contain"
+                    />
                 </div>
 
-                <div>
-                    <h2>
+                <div className="flex flex-col items-center gap-8 py-25">
+                    <h2 className="text-2xl font-bold text-[var(--text-main)] text-center">
                         Fluxo da gameplay
                     </h2>
                     
-                    <img src="src/assets/solução/fluxo.png" alt="" id="fluxo"/>
+                    <img
+                        src="src/assets/solução/fluxo.png"
+                        alt="Fluxo de funcionamento da gameplay"
+                        className="w-full max-w-[35rem] md:max-w-[50rem] h-auto object-contain"
+                    />
                 </div>
             </section>
         </div>
