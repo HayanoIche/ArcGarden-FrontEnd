@@ -1,3 +1,5 @@
+import ProblemaSolucao from '../components/Sobre/ProblemaSolucao';
+
 export default function Sobre() {
   return (
     <div className="flex flex-col items-center py-16 px-6 w-full">
@@ -23,6 +25,10 @@ export default function Sobre() {
         </p>
       </div>
 
+     <ProblemaSolucao />
+
     </div>
+
+
   );
 }
