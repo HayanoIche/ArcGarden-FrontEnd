@@ -2,10 +2,14 @@
 export default function Integrantes()
 {
     return (
-        <div>
-            <h2>Nossa equipe</h2>
-            <p>Conheça os integrantes do Arcgarden</p>
-
+        <div className="w-full flex flex-col items-center py-16 px-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-[var(--text-bold)] text-center mb-2">
+                Nossa equipe
+            </h2>
+            <p className="text-base text-[var(--text-main)] text-center mb-12">
+                Conheça os integrantes do Arcgarden
+            </p>
+            
             <div>
 
             <div>
