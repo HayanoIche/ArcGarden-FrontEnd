@@ -10,7 +10,7 @@ export default function RankingSection() {
 
         {/* 1º lugar */}
         <li className="w-full lg:w-80 lg:order-2">
-          <div className="bg-[var(--bg-main)] text-[var(--g6)] flex flex-col items-center justify-center w-full min-h-[9rem] rounded-2xl text-center px-4 py-4 font-bold">
+          <div className="bg-[var(--bg-main)] text-[var(--g6)] flex flex-col items-center justify-center w-full max-w-sm mx-auto mt-4 mb-4 lg:max-w-none min-h-[9rem] rounded-2xl text-center px-4 py-4 font-bold">
             
             <span className="text-[var(--g3)] text-2xl">
               🥇 1º lugar
@@ -28,8 +28,7 @@ export default function RankingSection() {
 
         {/* 2º lugar */}
         <li className="w-[calc(50%-0.5rem)] lg:w-64 lg:order-1">
-          <div className="bg-[var(--g5)] text-[var(--g6)] flex flex-col items-center justify-center w-full min-h-[7rem] rounded-2xl text-center px-4 py-4 font-bold">
-            
+<div className="bg-[var(--g5)] text-[var(--g6)] flex flex-col items-center justify-center w-full max-w-xs mx-auto mt-4 mb-4 lg:max-w-none min-h-[7rem] rounded-2xl text-center px-4 py-4 font-bold">            
             <span className="text-[var(--g2)] text-base">
               🥈 2º lugar
             </span>
@@ -43,8 +42,7 @@ export default function RankingSection() {
 
         {/* 3º lugar */}
         <li className="w-[calc(50%-0.5rem)] lg:w-64 lg:order-3">
-          <div className="bg-[var(--g5)] text-[var(--g6)] flex flex-col items-center justify-center w-full min-h-[7rem] rounded-2xl text-center px-4 py-4 font-bold">
-            
+<div className="bg-[var(--g5)] text-[var(--g6)] flex flex-col items-center justify-center w-full max-w-xs mx-auto mt-4 mb-4 lg:max-w-none min-h-[7rem] rounded-2xl text-center px-4 py-4 font-bold">            
             <span className="text-[var(--g2)] text-base">
               🥉 3º lugar
             </span>
