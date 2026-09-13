@@ -1,3 +1,45 @@
+const integrantes = [
+  {
+    nome: "Franco Jared Marquina Blas",
+    rm: "572901",
+    turma: "1TDSPK",
+    foto: "src/assets/integrantes/franco.jpeg",
+    linkedin: "https://www.linkedin.com/in/franco-jared-marquina-blas-b67851303/",
+    github: "https://github.com/Fmarquina",
+  },
+  {
+    nome: "Igor Mateus da Silva",
+    rm: "571751",
+    turma: "1TDSPK",
+    foto: "src/assets/integrantes/igor.jpeg",
+    linkedin: "https://www.linkedin.com/in/igor-mateus-da-silva-4b05013ba/",
+    github: "https://github.com/HayanoIche",
+  },
+  {
+    nome: "Sam Giulian Altoe",
+    rm: "570332",
+    turma: "1TDSPK",
+    foto: "src/assets/integrantes/sam.jpeg",
+    linkedin: "https://www.linkedin.com/in/sam-giulian-altoe-758a733b2/",
+    github: "https://github.com/Sammer-07",
+  },
+  {
+    nome: "Marcela Batista Teixeira",
+    rm: "574069",
+    turma: "1TDSPK",
+    foto: "src/assets/integrantes/marcela.jpeg",
+    linkedin: "https://www.linkedin.com/in/marcelabteixeira/",
+    github: "https://github.com/wonbindasilva",
+  },
+  {
+    nome: "Matheus Pereira Vidal",
+    rm: "573327",
+    turma: "1TDSPK",
+    foto: "src/assets/integrantes/matheus.jpeg",
+    linkedin: "https://linkedin.com/in/matheus-pereira-8700893b3",
+    github: "https://github.com/pereirinh44",
+  },
+];
 
 export default function Integrantes()
 {
@@ -9,7 +51,7 @@ export default function Integrantes()
             <p className="text-base text-[var(--text-main)] text-center mb-12">
                 Conheça os integrantes do Arcgarden
             </p>
-            
+
             <div>
 
             <div>
