@@ -42,7 +42,7 @@ No projeto estão separados nas pastas
 
 ## Autores do Arcgarden
 
-![AUTORES](src/assets/readme/integrantes.png)
+![AUTORES](src/assets/integrantes/integrantes.jpeg)
 
 links das redes sociais:
 
@@ -74,11 +74,11 @@ links das redes sociais:
 ## Representação do projeto
 
 Fluxo da gameplay do ArcGarden:
-![FLUXO](src/assets/)
+![FLUXO](src/assets/solução/fluxo.png)
 
 Exemplo de UI:
 <br>
-<img src="src" width="300" alt="Descrição da imagem">
+<img src="src/assets/solução/ui.png" width="300" alt="Descrição da imagem">
 
 # Link do Repositório
 
