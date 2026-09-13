@@ -1,5 +1,6 @@
 import ProblemaSolucao from '../components/Sobre/ProblemaSolucao';
 import VisaoGeral from '../components/Sobre/VisaoGeral';
+import Parceria from '../components/Sobre/Parceria';
 
 export default function Sobre() {
   return (
@@ -28,6 +29,7 @@ export default function Sobre() {
 
       <ProblemaSolucao />
       <VisaoGeral />
+      <Parceria />
 
     </div>
   );
