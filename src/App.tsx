@@ -3,7 +3,9 @@ import LayoutBase from './layouts/LayoutBase.tsx';
 
 import Home from './pages/Home';
 import Contato from './pages/Contato';
-import Solucao from './pages/Solucao.tsx';
+import Solucao from './pages/Solucao';
+import Sobre from './pages/Sobre';
+
 
 export default function App()
 {
@@ -14,6 +16,7 @@ export default function App()
           <Route path="/" element={<Home />} />
           <Route path="/solucao" element={<Solucao />} />
           <Route path="/contato" element={<Contato />} />
+          <Route path="/sobre" element={<Sobre />} />
         </Route>
       </Routes>
     </BrowserRouter>
