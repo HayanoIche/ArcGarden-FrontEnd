@@ -1,13 +1,11 @@
 
-export default function Home()
-{
-    return (
-        <div>
-            <h1>Página Inicial </h1>
-            
-            <p>
-                Arcgardennnnnn
-            </p>
-        </div>
-    );
+
+import HeroSection from '../components/Home/HeroSection';
+
+export default function Home() {
+  return (
+    <div>
+      <HeroSection />
+    </div>
+  );
 }
