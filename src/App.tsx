@@ -5,7 +5,6 @@ import Home from './pages/Home';
 import Contato from './pages/Contato';
 import Solucao from './pages/Solucao';
 import Sobre from './pages/Sobre';
-
 import Integrantes from './pages/Integrantes.tsx';
 import NotFound from './layouts/NotFound.tsx';
 
