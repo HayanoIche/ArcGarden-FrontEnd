@@ -23,7 +23,7 @@ export default function Solucao()
                         exemplo da UI do app
                     </h2>
                     
-                    <img src="../images/app/ui.png" alt="" id="ui" />
+                    <img src="src/assets/solução/ui.png" alt="" id="ui" />
                 </div>
 
                 <div>
@@ -31,7 +31,7 @@ export default function Solucao()
                         Fluxo da gameplay
                     </h2>
                     
-                    <img src="../images/app/fluxo.png" alt="" id="fluxo"/>
+                    <img src="src/assets/solução/fluxo.png" alt="" id="fluxo"/>
                 </div>
             </section>
         </div>
