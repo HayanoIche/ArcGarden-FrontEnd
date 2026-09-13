@@ -1,13 +1,15 @@
 import HeroSection from '../components/Home/HeroSection';
-import FuncionalidadesSection from '../components/Home/Funcionalidades';
-import ComoFuncionaSection from '../components/Home/ComoFunciona';
+import Funcionalidades from '../components/Home/Funcionalidades';
+import ComoFunciona from '../components/Home/ComoFunciona';
+import Ranking from '../components/Home/Ranking';
 
 export default function Home() {
   return (
     <div>
       <HeroSection />
-      <FuncionalidadesSection />
-      <ComoFuncionaSection />
+      <Funcionalidades />
+      <ComoFunciona />
+      <Ranking />
     </div>
   );
 }

@@ -9,7 +9,7 @@ const steps = [
 export default function ComoFunciona() {
   return (
     <section className="flex flex-col items-center py-12 px-6 w-full">
-      <h2 className="font-bold text-[var(--g4)] text-2xl lg:text-3xl pb-6 text-center">
+      <h2 className="font-bold text-[var(--g4)] text-2xl lg:text-4xl pb-6 text-center">
         - COMO FUNCIONA -
       </h2>
 
