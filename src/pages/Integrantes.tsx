@@ -56,11 +56,11 @@ export default function Integrantes()
         {integrantes.map((membro) => (
           <div
             key={membro.rm}
-            className="bg-[var(--g1)] border-4 border-[var(--g4)] rounded-2xl p-6 flex flex-col items-center w-full sm:w-72 shadow-sm transition-transform hover:-translate-y-1"
+            className="bg-[var(--g1)] border-[0.5rem] border-[var(--g4)] rounded-2xl p-6 flex flex-col items-center w-full sm:w-72 shadow-sm transition-transform hover:-translate-y-1"
           >
             <img
               src={membro.foto}
-              className="w-36 h-36 rounded-full object-cover border-2 border-[var(--g4)] mb-4"
+              className="w-36 h-36 rounded-full object-cover border-[.4rem] border-[var(--g4)] mb-4"
             />
 
             <h3 className="text-xl font-bold text-[var(--text-bold)] text-center mb-2">
