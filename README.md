@@ -42,7 +42,7 @@ No projeto estão separados nas pastas
 
 ## Autores do Arcgarden
 
-![AUTORES](src/assets/readme/integrantes.png)
+![AUTORES](src/assets/integrantes/integrantes.jpeg)
 
 links das redes sociais:
 
@@ -66,7 +66,7 @@ links das redes sociais:
 - Github: https://github.com/Fmarquina
 - Linkedin: https://www.linkedin.com/in/franco-jared-marquina-blas-b67851303/
 
-### Sam Giulian Altoe - 1TDSPK - 
+### Sam Giulian Altoe - 1TDSPK - 570332
 
 - Github: https://github.com/Sammer-07
 - Linkedin: https://www.linkedin.com/in/sam-giulian-altoe-758a733b2/
@@ -74,11 +74,11 @@ links das redes sociais:
 ## Representação do projeto
 
 Fluxo da gameplay do ArcGarden:
-![FLUXO](src/assets/)
+![FLUXO](src/assets/solução/fluxo.png)
 
 Exemplo de UI:
 <br>
-<img src="src" width="300" alt="Descrição da imagem">
+<img src="src/assets/solução/ui.png" width="300" alt="Descrição da imagem">
 
 # Link do Repositório
 
