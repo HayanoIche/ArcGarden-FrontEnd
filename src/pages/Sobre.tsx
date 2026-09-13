@@ -14,7 +14,7 @@ export default function Sobre() {
           O que é o{' '}
           <em
             style={{ fontFamily: 'var(--font-spectral)' }}
-            className="not-italic text-[var(--g3)]"
+            className="italic text-[var(--g3)]"
           >
             Arcgarden
           </em>

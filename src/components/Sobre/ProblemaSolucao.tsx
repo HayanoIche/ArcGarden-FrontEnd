@@ -2,7 +2,7 @@ import InfoCard from '../ui/InfoCard';
 
 export default function ProblemaSolucao() {
   return (
-    <div className="flex flex-col lg:flex-row gap-5 w-full max-w-sm lg:max-w-4xl mx-auto mt-12">
+    <div className="flex flex-col md:flex-row gap-5 w-full max-w-sm md:max-w-4xl mx-auto mt-12">
       <InfoCard
         title="⚠️ O problema"
         text="O consumo energético doméstico cresce a cada ano, mas falta incentivo concreto para que as pessoas adotem hábitos sustentáveis. Apps de sustentabilidade existem, mas são pouco atrativos, burocráticos e não geram engajamento contínuo."
