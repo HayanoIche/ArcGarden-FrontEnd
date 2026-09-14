@@ -1,12 +1,7 @@
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import FaqCard from '../components/Faq/FaqCard';
 
-interface FAQItem {
-  question: string;
-  answer: string;
-}
-
-const faqItems: FAQItem[] = [
+const faqItems = [
   {
     question: 'O que é o Arcgarden?',
     answer:
@@ -49,93 +44,51 @@ const faqItems: FAQItem[] = [
   },
 ];
 
-export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-
-  function toggleFAQ(index: number) {
-    setOpenIndex((current) => (current === index ? null : index));
-  }
-
+export default function Faq() {
   return (
-    <div className="w-full bg-[var(--bg-main)]">
-      <section className="mx-auto flex w-full max-w-5xl flex-col items-center px-6 py-16 md:py-20">
-        <span className="mb-4 rounded-full bg-[var(--g1)] px-4 py-1 text-sm font-bold text-[var(--g4)]">
-          FAQ
+    <div className="flex flex-col items-center w-full bg-[var(--bg-main)]">
+      <section className="flex flex-col items-center py-16 px-6 w-full box-border max-w-4xl">
+        <span className="bg-[var(--g1)] text-[var(--g4)] text-sm font-bold px-4 py-1 rounded-full mb-4">
+          Tire suas dúvidas
         </span>
 
-        <h1 className="mb-3 text-center text-4xl font-bold text-[var(--text-bold)] md:text-5xl">
-          Perguntas e respostas
-        </h1>
+        <h2 className="font-bold text-[var(--text-bold)] text-3xl lg:text-5xl mb-2 text-center">
+          Perguntas e{' '}
+          <em
+            style={{ fontFamily: 'var(--font-spectral)' }}
+            className="italic text-[var(--g3)]"
+          >
+            respostas
+          </em>
+        </h2>
 
-        <p className="mb-10 max-w-2xl text-center font-semibold text-[var(--text-main)]">
-          Tire suas principais dúvidas sobre o Arcgarden, as missões e o
-          sistema de recompensas.
+        <p className="font-bold text-[var(--text-main)] max-w-2xl text-center mb-10">
+          Tudo o que você precisa saber sobre o Arcgarden
         </p>
 
-        <div className="flex w-full flex-col gap-4">
-          {faqItems.map((item, index) => {
-            const isOpen = openIndex === index;
-
-            return (
-              <div
-                key={item.question}
-                className={`overflow-hidden rounded-2xl border bg-white shadow-sm transition-all ${
-                  isOpen
-                    ? 'border-[var(--g2)] shadow-md'
-                    : 'border-[#e2e2d8] hover:border-[var(--g2)]'
-                }`}
-              >
-                <button
-                  type="button"
-                  onClick={() => toggleFAQ(index)}
-                  aria-expanded={isOpen}
-                  aria-controls={`faq-answer-${index}`}
-                  className="flex w-full items-center justify-between gap-5 px-5 py-5 text-left md:px-7"
-                >
-                  <span className="font-bold text-[var(--text-bold)]">
-                    {item.question}
-                  </span>
-
-                  <span
-                    aria-hidden="true"
-                    className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--g1)] text-xl font-normal text-[var(--g4)] transition-transform duration-300 ${
-                      isOpen ? 'rotate-45' : ''
-                    }`}
-                  >
-                    +
-                  </span>
-                </button>
-
-                <div
-                  id={`faq-answer-${index}`}
-                  className={`grid transition-all duration-300 ${
-                    isOpen ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'
-                  }`}
-                >
-                  <div className="min-h-0 overflow-hidden">
-                    <p className="border-t border-[#eeeeE6] px-5 pb-6 pt-4 leading-7 text-[var(--text-main)] md:px-7">
-                      {item.answer}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
+        <div className="flex flex-col gap-4 w-full">
+          {faqItems.map((item) => (
+            <FaqCard
+              key={item.question}
+              question={item.question}
+              answer={item.answer}
+            />
+          ))}
         </div>
       </section>
 
-      <section className="w-full bg-[var(--g4)] px-6 py-14 text-center">
-        <h2 className="mb-2 text-3xl font-bold text-[var(--bg-main)] md:text-4xl">
+      <section className="flex flex-col items-center gap-2 w-full bg-[var(--g1)] py-12 px-6 text-center">
+        <h3 className="text-2xl font-bold text-[var(--text-bold)]">
           Ainda tem dúvidas?
-        </h2>
+        </h3>
 
-        <p className="mb-7 font-semibold text-[var(--g1)]">
+        <p className="text-[var(--text-main)] font-semibold mb-2">
           Entre em contato com a nossa equipe
         </p>
 
         <Link
           to="/contato"
-          className="inline-flex rounded-full bg-[var(--g1)] px-7 py-3 font-bold text-[var(--g4)] no-underline transition-colors hover:bg-white"
+          className="rounded-xl bg-[var(--g4)] px-6 py-3 font-semibold text-white transition-colors hover:bg-[var(--g5)]"
         >
           Ir para contato
         </Link>
