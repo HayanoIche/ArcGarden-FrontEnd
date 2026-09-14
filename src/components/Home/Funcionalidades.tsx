@@ -1,18 +1,21 @@
 import InfoCard from '../ui/InfoCard';
+import plantinha from '../../assets/home/cards/plantinha.png';
+import vasinho from '../../assets/home/cards/vasinho.png';
+import trofeu from '../../assets/home/cards/trofeu.png';
 
 const items = [
   {
-    img: 'src/assets/home/cards/plantinha.png',
+    img: plantinha,
     title: 'Missões reais',
     text: 'Grave um vídeo da sua ação sustentável e receba uma nota da IA.',
   },
   {
-    img: 'src/assets/home/cards/vasinho.png',
+    img: vasinho,
     title: 'Jardim virtual',
     text: 'Suas plantas evoluem conforme você acumula pontos.',
   },
   {
-    img: 'src/assets/home/cards/trofeu.png',
+    img: trofeu,
     title: 'Recompensas',
     text: 'O primeiro lugar ganha a conta de energia paga.',
   },

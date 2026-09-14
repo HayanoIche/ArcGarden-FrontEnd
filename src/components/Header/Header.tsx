@@ -1,6 +1,13 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { NavItem } from './NavItem';
+import logo from '../../assets/ArcGardenLogo.png';
+import homeIcon from '../../assets/icons/home.png';
+import membersIcon from '../../assets/icons/members.png';
+import aboutIcon from '../../assets/icons/about.png';
+import solutionIcon from '../../assets/icons/solution.png';
+import faqIcon from '../../assets/icons/faq.png';
+import contactIcon from '../../assets/icons/contact.png';
 
 function MenuButton(props: { isOpen: boolean; onClick: () => void })
 {
@@ -22,12 +29,12 @@ function MenuButton(props: { isOpen: boolean; onClick: () => void })
 
 // Array de links para evitar repetição
 const navLinks = [
-  { to: '/', label: 'Home', iconSrc: 'src/assets/icons/home.png' },
-  { to: '/integrantes', label: 'Integrantes', iconSrc: 'src/assets/icons/members.png' },
-  { to: '/sobre', label: 'Sobre', iconSrc: 'src/assets/icons/about.png' },
-  { to: '/solucao', label: 'Solução', iconSrc: 'src/assets/icons/solution.png' },
-  { to: '/faq', label: 'FAQ', iconSrc: 'src/assets/icons/solution.png' },
-  { to: '/contato', label: 'Contato', iconSrc: 'src/assets/icons/contact.png', isButton: true },
+  { to: '/', label: 'Home', iconSrc: homeIcon },
+  { to: '/integrantes', label: 'Integrantes', iconSrc: membersIcon },
+  { to: '/sobre', label: 'Sobre', iconSrc: aboutIcon },
+  { to: '/solucao', label: 'Solução', iconSrc: solutionIcon },
+  { to: '/faq', label: 'FAQ', iconSrc: faqIcon },
+  { to: '/contato', label: 'Contato', iconSrc: contactIcon, isButton: true },
 ];
 
 export default function Header() {
@@ -40,7 +47,7 @@ export default function Header() {
     {/* LOGO */}
     <Link to="/" className="pl-4 sm:pl-6 lg:pl-12 py-2 flex items-center shrink-0">
       <img
-        src="src/assets/ArcGardenLogo.png"
+        src={logo}
         alt="Arc Garden Logo"
         className="w-32 sm:w-44 md:w-52 lg:w-60 h-auto object-contain"
       />

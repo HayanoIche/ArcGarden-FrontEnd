@@ -1,9 +1,15 @@
+import receba from '../../assets/home/tutorial/receba.png';
+import grave from '../../assets/home/tutorial/grave.png';
+import iris from '../../assets/home/tutorial/iris.png';
+import ganhe from '../../assets/home/tutorial/ganhe.png';
+import suba from '../../assets/home/tutorial/suba.png';
+
 const steps = [
-  { img: 'src/assets/home/tutorial/receba.png', text: 'Receba missões diárias' },
-  { img: 'src/assets/home/tutorial/grave.png', text: 'Grave o vídeo da ação' },
-  { img: 'src/assets/home/tutorial/iris.png', text: 'A IA avalia sua ação' },
-  { img: 'src/assets/home/tutorial/ganhe.png', text: 'Ganhe pontos' },
-  { img: 'src/assets/home/tutorial/suba.png', text: 'Suba no ranking' },
+  { img: receba, text: 'Receba missões diárias' },
+  { img: grave, text: 'Grave o vídeo da ação' },
+  { img: iris, text: 'A IA avalia sua ação' },
+  { img: ganhe, text: 'Ganhe pontos' },
+  { img: suba, text: 'Suba no ranking' },
 ];
 
 export default function ComoFunciona() {
