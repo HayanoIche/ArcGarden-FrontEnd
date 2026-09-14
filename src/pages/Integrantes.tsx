@@ -1,9 +1,15 @@
+import fotoFranco from '../assets/integrantes/franco.jpeg';
+import fotoIgor from '../assets/integrantes/igor.jpeg';
+import fotoSam from '../assets/integrantes/sam.jpeg';
+import fotoMarcela from '../assets/integrantes/marcela.jpeg';
+import fotoMatheus from '../assets/integrantes/matheus.jpeg';
+
 const integrantes = [
   {
     nome: "Franco Jared Marquina Blas",
     rm: "572901",
     turma: "1TDSPK",
-    foto: "src/assets/integrantes/franco.jpeg",
+    foto: fotoFranco,
     linkedin: "https://www.linkedin.com/in/franco-jared-marquina-blas-b67851303/",
     github: "https://github.com/Fmarquina",
   },
@@ -11,7 +17,7 @@ const integrantes = [
     nome: "Igor Mateus da Silva",
     rm: "571751",
     turma: "1TDSPK",
-    foto: "src/assets/integrantes/igor.jpeg",
+    foto: fotoIgor,
     linkedin: "https://www.linkedin.com/in/igor-mateus-da-silva-4b05013ba/",
     github: "https://github.com/HayanoIche",
   },
@@ -19,7 +25,7 @@ const integrantes = [
     nome: "Sam Giulian Altoe",
     rm: "570332",
     turma: "1TDSPK",
-    foto: "src/assets/integrantes/sam.jpeg",
+    foto: fotoSam,
     linkedin: "https://www.linkedin.com/in/sam-giulian-altoe-758a733b2/",
     github: "https://github.com/Sammer-07",
   },
@@ -27,7 +33,7 @@ const integrantes = [
     nome: "Marcela Batista Teixeira",
     rm: "574069",
     turma: "1TDSPK",
-    foto: "src/assets/integrantes/marcela.jpeg",
+    foto: fotoMarcela,
     linkedin: "https://www.linkedin.com/in/marcelabteixeira/",
     github: "https://github.com/wonbindasilva",
   },
@@ -35,7 +41,7 @@ const integrantes = [
     nome: "Matheus Pereira Vidal",
     rm: "573327",
     turma: "1TDSPK",
-    foto: "src/assets/integrantes/matheus.jpeg",
+    foto: fotoMatheus,
     linkedin: "https://linkedin.com/in/matheus-pereira-8700893b3",
     github: "https://github.com/pereirinh44",
   },
@@ -60,6 +66,7 @@ export default function Integrantes()
           >
             <img
               src={membro.foto}
+              alt={`Foto de ${membro.nome}`}
               className="w-36 h-36 rounded-full object-cover border-[.4rem] border-[var(--g4)] mb-4"
             />
 

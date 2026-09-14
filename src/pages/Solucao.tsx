@@ -1,3 +1,6 @@
+import uiImg from '../assets/solução/ui.png';
+import fluxoImg from '../assets/solução/fluxo.png';
+
 export default function Solucao()
 {
     return (
@@ -23,7 +26,7 @@ export default function Solucao()
                     </h2>
                     
                     <img
-                        src="src/assets/solução/ui.png"
+                        src={uiImg}
                         alt="Exemplo da interface do usuário do aplicativo"
                         className="w-full max-w-[25rem] h-auto object-contain"
                     />
@@ -35,7 +38,7 @@ export default function Solucao()
                     </h2>
                     
                     <img
-                        src="src/assets/solução/fluxo.png"
+                        src={fluxoImg}
                         alt="Fluxo de funcionamento da gameplay"
                         className="w-full max-w-[35rem] md:max-w-[50rem] h-auto object-contain"
                     />

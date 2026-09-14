@@ -6,6 +6,7 @@ import Contato from './pages/Contato';
 import Solucao from './pages/Solucao';
 import Sobre from './pages/Sobre';
 import Integrantes from './pages/Integrantes.tsx';
+import Faq from './pages/faq.tsx';
 import NotFound from './layouts/NotFound.tsx';
 
 export default function App()
@@ -19,6 +20,7 @@ export default function App()
           <Route path="/contato" element={<Contato />} />
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/integrantes" element={<Integrantes />} />
+          <Route path="/faq" element={<Faq />} />
           <Route path="/*" element={<NotFound />} />
         </Route>
       </Routes>

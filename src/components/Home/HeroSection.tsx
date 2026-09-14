@@ -1,8 +1,11 @@
+import girassol from '../../assets/home/girassol.png';
+import cacto from '../../assets/home/cacto.png';
+
 export default function HeroSection() {
   return (
     <section className="flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-12 pt-12 pb-12 lg:pt-28 lg:pb-32 px-6 text-center">
       <img
-        src="src/assets/home/girassol.png"
+        src={girassol}
         alt=""
         className="w-40 hidden lg:block"
       />
@@ -24,7 +27,7 @@ export default function HeroSection() {
       </div>
 
       <img
-        src="src/assets/home/cacto.png"
+        src={cacto}
         alt=""
         className="w-40 hidden lg:block"
       />
