@@ -13,7 +13,7 @@ const faqItems = [
       'A planta murcha depois de alguns dias sem rega e para de pontuar no ranking. A planta não perde nível, é só regar que volta ao normal. Plantas nível 5 nunca murcham.',
   },
   {
-    question: 'Como funciona a IA Iris?',
+    question: 'Como funciona a IA Iris? ',
     answer:
       'Escolha a missão, grave um vídeo mostrando a ação sustentável e envie pelo app. A IA analisa e se o score for acima de 60%, você recebe Água e SoulPoints.',
   },
@@ -23,7 +23,7 @@ const faqItems = [
       'Água é a moeda do Arcgarden. Serve pra regar plantas, comprar sementes, temas de jardim e girar a roleta.',
   },
   {
-    question: 'O que são SoulPoints?',
+    question: 'O que são SoulPoints? ',
     answer:
       'SoulPoints acumulam infinitamente e são trocados por benefícios reais fora do jogo, como desconto na conta de energia elétrica, em parceria com a SoulUp.',
   },
@@ -38,7 +38,7 @@ const faqItems = [
       'O Ranking Mensal é baseado no EcoScore. O 1º lugar ganha a conta de energia 100% paga, o 2º ganha 50% e o 3º ganha 25%.',
   },
   {
-    question: 'Quando o ranking reseta?',
+    question:'E quando o ranking resetar?',
     answer:
       'O ranking reseta todo início de mês. Os vencedores recebem os descontos na conta de energia do mês seguinte.',
   },
