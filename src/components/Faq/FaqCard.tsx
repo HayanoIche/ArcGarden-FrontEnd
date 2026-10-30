@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
-export default function FaqCard(props: { question: string; answer: string }) {
+export default function FaqCard(props: { question: string; answer: string })
+{
   const [isOpen, setIsOpen] = useState(false);
 
   return (
