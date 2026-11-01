@@ -24,7 +24,8 @@ https://arc-garden-theta.vercel.app/
 
 
 ### SITE
-No front-end do projeto foram utilizados React para estrutura do projeto, Tailwind CSS pra estilização e Typescript para programação
+No front-end do projeto foram utilizados React para estrutura do projeto, Tailwind CSS pra estilização e Typescript para programação.
+Vite como ferramenta de build e React Router para
 
 ### DESIGN
 Também foram utilizados para o design o Figma, e para os elementos visuais Pixel-Art foi usado o ASEPRITE.
@@ -50,30 +51,25 @@ No projeto estão separados nas pastas
 
 links das redes sociais:
 
-### Igor Mateus - 1TDSPK - RM571751
+### Igor Mateus - 1TDSPK - RM 571751
 
 - Github: https://github.com/HayanoIche
 - Linkedin: https://www.linkedin.com/in/igor-mateus-da-silva-4b05013ba/
 
-### Marcela Batista - 1TDSPK - RM574069
+### Marcela Batista - 1TDSPK - RM 574069
 
 - Github: https://github.com/wonbindasilva
 - Linkedin: https://www.linkedin.com/in/marcelabteixeira/
 
-### Matheus Pereira - 1TDSPK - RM573327
+### Matheus Pereira - 1TDSPK - RM 573327
 
 - Github: https://github.com/pereirinh44
 - Linkedin: https://linkedin.com/in/matheus-pereira-8700893b3
 
-### Franco Marquina - 1TDSPK - RM572901
+### Franco Marquina - 1TDSPK - RM 572901
 
 - Github: https://github.com/Fmarquina
 - Linkedin: https://www.linkedin.com/in/franco-jared-marquina-blas-b67851303/
-
-### Sam Giulian Altoe - 1TDSPK - 570332
-
-- Github: https://github.com/Sammer-07
-- Linkedin: https://www.linkedin.com/in/sam-giulian-altoe-758a733b2/
 
 ## Representação do projeto
 
@@ -83,6 +79,10 @@ Fluxo da gameplay do ArcGarden:
 Exemplo de UI:
 <br>
 <img src="src/assets/solução/ui.png" width="300" alt="Descrição da imagem">
+
+# Como Usar
+
+Para usar o projeto, primeiro dê clone no repositório. Depois, precisara do NODEJS instalado no seu computador. Depois execute NPM install na pasta root do projeto, isso instalara as dependências dele. Depois para rodar basta usar as ferramentas de build do vite configuradas no projeot, como "npm run dev" para rodar em um server local e "npm run build" para compilar e empacotar o projeto como versão final.
 
 # Link do Repositório
 
