@@ -11,19 +11,30 @@ interface TipoPlanta {
 export default function Wiki() {
   const [plantas, setPlantas] = useState<TipoPlanta[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setErro] = useState<string | null>(null);
   const navigate = useNavigate();
   
   const API_URL = import.meta.env.VITE_URL_API || 'https://arcgarden.onrender.com';
 
   useEffect(() => {
+    setLoading(true);
+    setErro(null);
+
     fetch(`${API_URL}/api/v1/tipos-plantas`)
-      .then((res) => res.json())
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error('Não foi possível carregar as plantas.');
+        }
+
+        return res.json();
+      })
       .then((data) => {
         setPlantas(data);
         setLoading(false);
       })
       .catch((err) => {
         console.error(err);
+        setErro('Não foi possível carregar as plantas. Tente novamente.');
         setLoading(false);
       });
   }, [API_URL]);
@@ -43,6 +54,15 @@ export default function Wiki() {
     );
   }
 
+  if (error) {
+    return (
+      <div role="alert">
+        {error}
+      </div>
+    );
+  }
+
+
   return (
     <div className="flex flex-col items-center py-16 px-6 w-full bg-[var(--bg-main)] min-h-screen">
       <span className="bg-[var(--g1)] text-[var(--g4)] text-sm font-bold px-4 py-1 rounded-full mb-4">
@@ -52,6 +72,11 @@ export default function Wiki() {
         Wiki de <em style={{ fontFamily: 'var(--font-spectral)' }} className="italic text-[var(--g3)]">Plantas</em>
       </h2>
       
+      {plantas.length === 0 ? (
+        <p className="text-center text-[var(--text-bold)]">
+          Nenhuma planta encontrada.
+        </p>
+      ) : (
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full max-w-6xl">
         {plantas.map((planta) => {
           const imagemSrc = imagensPlantas[planta.id];
@@ -80,6 +105,7 @@ export default function Wiki() {
           );
         })}
       </div>
+      )}
     </div>
   );
 }
