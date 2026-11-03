@@ -1,4 +1,4 @@
-import InfoCard from '../Ui/InfoCard';
+import InfoCard from '../UI/InfoCard';
 
 const items = [
   { title: 'Plataforma', text: 'Feature integrada ao app Soul Up' },

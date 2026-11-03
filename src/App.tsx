@@ -6,7 +6,7 @@ import Contato from './pages/Contato';
 import Solucao from './pages/Solucao';
 import Sobre from './pages/Sobre';
 import Integrantes from './pages/Integrantes.tsx';
-import Faq from './pages/Faq.tsx';
+import Faq from './pages/Faqq.tsx';
 import NotFound from './layouts/NotFound.tsx';
 import Wiki from './pages/Wiki.tsx';
 import WikiDetalhe from './pages/WikiDetalhe.tsx';
