@@ -8,6 +8,8 @@ import Sobre from './pages/Sobre';
 import Integrantes from './pages/Integrantes.tsx';
 import Faq from './pages/Faq.tsx';
 import NotFound from './layouts/NotFound.tsx';
+import Wiki from './pages/Wiki.tsx';
+import WikiDetalhe from './pages/WikiDetalhe.tsx';
 
 export default function App()
 {
@@ -21,6 +23,8 @@ export default function App()
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/integrantes" element={<Integrantes />} />
           <Route path="/faq" element={<Faq />} />
+          <Route path="/wiki" element={<Wiki />} /> 
+          <Route path="/wiki/:nomePlanta" element={<WikiDetalhe />} />
           <Route path="/*" element={<NotFound />} />
         </Route>
       </Routes>

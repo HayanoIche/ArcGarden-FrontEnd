@@ -1,4 +1,4 @@
-import InfoCard from '../ui/InfoCard';
+import InfoCard from '../Ui/InfoCard';
 
 const cards = [
   { title: '- Pontos -', text: 'Troque seus pontos por benefícios reais.' },

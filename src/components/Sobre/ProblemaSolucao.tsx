@@ -1,4 +1,4 @@
-import InfoCard from '../ui/InfoCard';
+import InfoCard from '../Ui/InfoCard';
 
 export default function ProblemaSolucao() {
   return (
