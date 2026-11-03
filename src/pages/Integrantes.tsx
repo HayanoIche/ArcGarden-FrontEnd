@@ -39,40 +39,38 @@ const integrantes = [
   },
 ];
 
-export default function Integrantes()
-{
-    return (
-        <div className="w-full flex flex-col items-center py-16 px-6">
-            <h2 className="text-4xl md:text-5xl font-bold text-[var(--text-bold)] text-center mb-2">
-                Nossa equipe
-            </h2>
-            <p className="text-base text-[var(--text-main)] text-center mb-12">
-                Conheça os integrantes do Arcgarden
-            </p>
-
-            <div className="flex flex-wrap justify-center gap-8 w-full max-w-6xl">
+export default function Integrantes() {
+  return (
+    <div className="flex flex-col items-center py-20 px-6 w-full bg-[var(--bg-main)] pb-40">
+      <span className="bg-[var(--g1)] text-[var(--g4)] text-sm font-bold px-4 py-1 rounded-full mb-4">
+        Nossa equipe
+      </span>
+      <h2 className="font-bold text-[var(--text-bold)] text-3xl lg:text-5xl mb-2 text-center">
+        Conheça os integrantes do <em style={{ fontFamily: 'var(--font-spectral)' }} className="italic text-[var(--g3)]">Arcgarden</em>
+      </h2>
+      <p className="font-medium text-[var(--text-main)] max-w-2xl text-center mb-14">
+        Quem faz o projeto acontecer no dia a dia
+      </p>
+      
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-full max-w-7xl">
         {integrantes.map((membro) => (
-          <div
-            key={membro.rm}
-            className="bg-[var(--g1)] border-[0.5rem] border-[var(--g4)] rounded-2xl p-6 flex flex-col items-center w-full sm:w-72 shadow-sm transition-transform hover:-translate-y-1"
+          <div 
+            key={membro.rm} 
+            className="flex flex-col items-center bg-white border-2 border-[var(--g1)] rounded-2xl p-8 shadow-md hover:shadow-lg transition-all hover:-translate-y-1"
           >
             <img
               src={membro.foto}
               alt={`Foto de ${membro.nome}`}
-              className="w-36 h-36 rounded-full object-cover border-[.4rem] border-[var(--g4)] mb-4"
+              className="w-36 h-36 rounded-full object-cover mb-6 border-2 border-[var(--g1)] shadow-inner"
             />
-
-            <h3 className="text-xl font-bold text-[var(--text-bold)] text-center mb-2">
+            <h3 className="font-bold text-[var(--text-bold)] text-xl mb-2 text-center">
               {membro.nome}
             </h3>
-            <p className="text-sm text-[var(--text-main)] mb-1">
-              <strong className="text-[var(--text-bold)]">RM:</strong> {membro.rm}
-            </p>
-            <p className="text-sm text-[var(--text-main)] mb-4">
-              <strong className="text-[var(--text-bold)]">Turma:</strong> {membro.turma}
-            </p>
+            <span className="text-xs font-semibold text-[var(--g3)] bg-[var(--g1)] px-3 py-1 rounded-full mb-6">
+              {membro.turma} • RM {membro.rm}
+            </span>
 
-            <div className="flex gap-2 text-sm font-bold text-[var(--g4)]">
+            <div className="flex gap-3 text-sm font-bold text-[var(--g4)] mt-auto pt-4 border-t border-[var(--g1)] w-full justify-center">
               <a
                 href={membro.linkedin}
                 target="_blank"
@@ -94,7 +92,6 @@ export default function Integrantes()
           </div>
         ))}
       </div>
-
     </div>
   );
 }
