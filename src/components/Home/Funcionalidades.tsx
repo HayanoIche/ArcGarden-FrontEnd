@@ -1,4 +1,4 @@
-import InfoCard from '../Ui/InfoCard';
+import InfoCard from '../UserInterface/InfoCard';
 import plantinha from '../../assets/home/cards/plantinha.png';
 import vasinho from '../../assets/home/cards/vasinho.png';
 import trofeu from '../../assets/home/cards/trofeu.png';
