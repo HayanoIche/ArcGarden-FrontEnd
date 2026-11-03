@@ -22,14 +22,6 @@ const integrantes = [
     github: "https://github.com/HayanoIche",
   },
   {
-    nome: "Sam Giulian Altoe",
-    rm: "570332",
-    turma: "1TDSPK",
-    foto: fotoSam,
-    linkedin: "https://www.linkedin.com/in/sam-giulian-altoe-758a733b2/",
-    github: "https://github.com/Sammer-07",
-  },
-  {
     nome: "Marcela Batista Teixeira",
     rm: "574069",
     turma: "1TDSPK",
