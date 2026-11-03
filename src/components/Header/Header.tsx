@@ -8,6 +8,7 @@ import aboutIcon from '../../assets/icons/about.png';
 import solutionIcon from '../../assets/icons/solution.png';
 import faqIcon from '../../assets/icons/faq.png';
 import contactIcon from '../../assets/icons/contact.png';
+import wikiIcon from '../../assets/icons/wiki.png';
 
 function MenuButton(props: { isOpen: boolean; onClick: () => void })
 {
@@ -33,6 +34,7 @@ const navLinks = [
   { to: '/integrantes', label: 'Integrantes', iconSrc: membersIcon },
   { to: '/sobre', label: 'Sobre', iconSrc: aboutIcon },
   { to: '/solucao', label: 'Solução', iconSrc: solutionIcon },
+  { to: '/wiki', label: 'Wiki', iconSrc: wikiIcon, },
   { to: '/faq', label: 'FAQ', iconSrc: faqIcon },
   { to: '/contato', label: 'Contato', iconSrc: contactIcon, isButton: true },
 ];

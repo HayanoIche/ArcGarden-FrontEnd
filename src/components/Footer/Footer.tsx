@@ -35,6 +35,11 @@ export default function Footer()
                         </Link>
                     </li>
                     <li>
+                        <Link to="/wiki" className="hover:text-white transition-colors no-underline">
+                            Wiki
+                        </Link>
+                    </li>
+                    <li>
                         <Link to="/faq" className="hover:text-white transition-colors no-underline">
                             FAQ
                         </Link>
