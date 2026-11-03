@@ -1,6 +1,5 @@
 import fotoFranco from '../assets/integrantes/franco.jpeg';
 import fotoIgor from '../assets/integrantes/igor.jpeg';
-import fotoSam from '../assets/integrantes/sam.jpeg';
 import fotoMarcela from '../assets/integrantes/marcela.jpeg';
 import fotoMatheus from '../assets/integrantes/matheus.jpeg';
 
