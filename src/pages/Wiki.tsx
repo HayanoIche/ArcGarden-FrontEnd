@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { imagensPlantas } from '../components/Wiki/plantasImagens';
 
 interface TipoPlanta {
@@ -11,6 +11,7 @@ interface TipoPlanta {
 export default function Wiki() {
   const [plantas, setPlantas] = useState<TipoPlanta[]>([]);
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
   
   const API_URL = import.meta.env.VITE_URL_API || 'https://arcgarden.onrender.com';
 
@@ -45,7 +46,7 @@ export default function Wiki() {
   return (
     <div className="flex flex-col items-center py-16 px-6 w-full bg-[var(--bg-main)] min-h-screen">
       <span className="bg-[var(--g1)] text-[var(--g4)] text-sm font-bold px-4 py-1 rounded-full mb-4">
-        Enciclopédia
+        Almanaque
       </span>
       <h2 className="font-bold text-[var(--text-bold)] text-3xl lg:text-5xl mb-10 text-center">
         Wiki de <em style={{ fontFamily: 'var(--font-spectral)' }} className="italic text-[var(--g3)]">Plantas</em>
@@ -55,12 +56,12 @@ export default function Wiki() {
         {plantas.map((planta) => {
           const imagemSrc = imagensPlantas[planta.id];
           const slug = criarSlug(planta.nome);
-
+            
           return (
-            <Link 
+            <div 
               key={planta.id} 
-              to={`/wiki/${slug}`} 
-              className="flex flex-col items-center bg-white border border-[var(--g1)] rounded-xl p-6 shadow-sm hover:shadow-md transition-all hover:-translate-y-1"
+              onClick={() => navigate(`/wiki/${slug}`)}
+              className="flex flex-col items-center bg-white border border-[var(--g1)] rounded-xl p-6 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 cursor-pointer"
             >
               {imagemSrc && (
                 <img 
@@ -75,7 +76,7 @@ export default function Wiki() {
               <span className="text-xs font-semibold text-[var(--g3)] bg-[var(--g1)] px-2.5 py-0.5 rounded-full">
                 {planta.categoria}
               </span>
-            </Link>
+            </div>
           );
         })}
       </div>

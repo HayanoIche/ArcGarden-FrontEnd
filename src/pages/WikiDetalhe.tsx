@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { imagensPlantas } from '../components/Wiki/plantasImagens';
 import fundoImg from '../assets/fundo.png';
 
@@ -13,6 +13,7 @@ interface TipoPlanta {
 
 export default function WikiDetalhe() {
   const { nomePlanta } = useParams<{ nomePlanta: string }>();
+  const navigate = useNavigate();
   const [planta, setPlanta] = useState<TipoPlanta | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -61,9 +62,12 @@ export default function WikiDetalhe() {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen text-xl font-bold text-[var(--text-bold)] bg-[var(--bg-main)] gap-4">
         <p>Planta não encontrada.</p>
-        <Link to="/wiki" className="text-sm font-bold text-[var(--g4)] hover:underline">
+        <button 
+          onClick={() => navigate('/wiki')} 
+          className="text-sm font-bold text-[var(--g4)] hover:underline cursor-pointer"
+        >
           Voltar para a Wiki
-        </Link>
+        </button>
       </div>
     );
   }
@@ -74,9 +78,12 @@ export default function WikiDetalhe() {
     <div className="flex flex-col items-center justify-center min-h-screen py-8 px-4 sm:px-8 w-full bg-[var(--bg-main)]">
       
       <div className="w-full max-w-7xl mb-4">
-        <Link to="/wiki" className="text-sm font-bold text-[var(--g4)] hover:underline">
+        <button 
+          onClick={() => navigate('/wiki')} 
+          className="text-sm font-bold text-[var(--g4)] hover:underline cursor-pointer"
+        >
           ← Voltar para a Wiki
-        </Link>
+        </button>
       </div>
 
       <div className="w-full max-w-7xl min-h-[75vh] bg-white border-2 border-[var(--g1)] rounded-3xl p-8 sm:p-12 shadow-2xl flex flex-col md:flex-row gap-10 items-stretch justify-between">
