@@ -5,8 +5,7 @@ export default function Parceria() {
       <h3 className="font-bold text-[var(--text-bold)] text-xl mb-5">
         Parceria com a{' '}
         <em
-          style={{ fontFamily: 'var(--font-spectral)' }}
-          className="italic text-3xl text-[var(--g3)]"
+          className="font-spectral italic text-3xl text-[var(--g3)]"
         >
           Soul Up
         </em>

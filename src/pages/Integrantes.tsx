@@ -45,7 +45,7 @@ export default function Integrantes() {
         Nossa equipe
       </span>
       <h2 className="font-bold text-[var(--text-bold)] text-3xl lg:text-5xl mb-2 text-center">
-        Conheça os integrantes do <em style={{ fontFamily: 'var(--font-spectral)' }} className="italic text-[var(--g3)]">Arcgarden</em>
+        Conheça os integrantes do <em className="font-spectral italic text-[var(--g3)]">Arcgarden</em>
       </h2>
       <p className="font-medium text-[var(--text-main)] max-w-2xl text-center mb-14">
         Quem faz o projeto acontecer no dia a dia

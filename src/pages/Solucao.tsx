@@ -1,4 +1,4 @@
-import uiImg from '../assets/solução/ui.png';
+import uiImg from '../assets/solução/ui.png';
 import fluxoImg from '../assets/solução/fluxo.png';
 
 export default function Solucao()
@@ -11,7 +11,7 @@ export default function Solucao()
                 </span>
                 
                 <h2 className="text-4xl md:text-5xl font-bold text-[var(--text-bold)] text-center mb-2">
-                    Como é o <em className="font-['Spectral',serif] italic text-[var(--g3)]">Arcgarden</em>
+                    Como é o <em className="font-spectral italic text-[var(--g3)]">Arcgarden</em>
                 </h2>
                 
                 <p className="text-base text-[var(--text-main)] max-w-[40rem] mb-10">

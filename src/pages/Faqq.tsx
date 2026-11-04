@@ -55,8 +55,7 @@ export default function Faq() {
         <h2 className="font-bold text-[var(--text-bold)] text-3xl lg:text-5xl mb-2 text-center">
           Perguntas e{' '}
           <em
-            style={{ fontFamily: 'var(--font-spectral)' }}
-            className="italic text-[var(--g3)]"
+            className="font-spectral italic text-[var(--g3)]"
           >
             respostas
           </em>

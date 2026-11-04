@@ -14,8 +14,7 @@ export default function HeroSection() {
         <h2 className="flex flex-col items-center font-bold text-[var(--g4)] text-[3rem] lg:text-[5rem] leading-tight">
           Seu jardim virtual,{' '}
           <em
-  style={{ fontFamily: 'var(--font-spectral)' }}
-  className="italic text-[var(--g3)]"
+  className="font-spectral italic text-[var(--g3)]"
 >
   impacto real
 </em>

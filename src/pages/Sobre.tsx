@@ -13,10 +13,7 @@ export default function Sobre() {
 
         <h2 className="font-bold text-[var(--text-bold)] text-3xl lg:text-5xl mb-2">
           O que é o{' '}
-          <em
-            style={{ fontFamily: 'var(--font-spectral)' }}
-            className="italic text-[var(--g3)]"
-          >
+          <em className="font-spectral italic text-[var(--g3)]">
             Arcgarden
           </em>
         </h2>

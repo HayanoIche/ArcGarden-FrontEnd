@@ -69,7 +69,7 @@ export default function Wiki() {
         Almanaque
       </span>
       <h2 className="font-bold text-[var(--text-bold)] text-3xl lg:text-5xl mb-10 text-center">
-        Wiki de <em style={{ fontFamily: 'var(--font-spectral)' }} className="italic text-[var(--g3)]">Plantas</em>
+        Wiki de <em className="font-spectral italic text-[var(--g3)]">Plantas</em>
       </h2>
       
       {plantas.length === 0 ? (
