@@ -5,7 +5,7 @@ export default function Solucao()
 {
     return (
         <div className="flex flex-col items-center w-full">
-            <section className="flex flex-col items-center py-18 px-8 md:py-18 md:px-6 w-full box-border">
+            <section className="flex flex-col items-center w-full box-border px-6 pt-20 pb-14 text-center">
                 <span className="bg-[var(--g1)] text-[var(--g4)] text-[0.85rem] font-bold py-1 px-4 rounded-full mb-4">
                     Conheça o projeto
                 </span>
@@ -19,29 +19,38 @@ export default function Solucao()
                 </p>
             </section>
 
-            <section className="flex flex-col items-center md:flex-row gap-10 pb-20">
-                <div className="flex flex-col items-center gap-8">
-                    <h2 className="text-2xl font-bold text-[var(--text-main)] text-center">
-                        Exemplo da UI do app
-                    </h2>
-                    
+            <section className="mx-auto grid w-full max-w-6xl grid-cols-1 items-start gap-8 px-6 pb-24 sm:grid-cols-2">
+                <div className="flex justify-center">
                     <img
                         src={uiImg}
-                        alt="Exemplo da interface do usuário do aplicativo"
-                        className="w-full max-w-[25rem] h-auto object-contain"
+                        alt="Exemplo da interface do jogo com uma planta"
+                        className="h-auto w-full max-w-xs object-contain"
                     />
                 </div>
 
-                <div className="flex flex-col items-center gap-8 py-25">
-                    <h2 className="text-2xl font-bold text-[var(--text-main)] text-center">
-                        Fluxo da gameplay
-                    </h2>
-                    
-                    <img
-                        src={fluxoImg}
-                        alt="Fluxo de funcionamento da gameplay"
-                        className="w-full max-w-[35rem] md:max-w-[50rem] h-auto object-contain"
-                    />
+                <div className="flex flex-col gap-3">
+                    <section className="rounded-lg border border-[var(--g1)] bg-white px-4 py-3">
+                        <p className="text-sm text-[var(--text-main)]">Pontos de água: 0</p>
+                        <p className="text-sm text-[var(--text-main)]">Pacotes usados: 0</p>
+                        <p className="text-sm text-[var(--text-main)]">Regas realizadas: 0</p>
+                    </section>
+
+                    <section className="rounded-lg border border-[var(--g1)] bg-white px-4 py-3">
+                        <p className="text-sm font-bold text-[var(--text-bold)]">
+                            Missões reclamadas: 0/3
+                        </p>
+                    </section>
+
+                    <section className="rounded-lg border border-[var(--g1)] bg-white p-4">
+                        <h2 className="mb-3 text-lg font-bold text-[var(--text-bold)]">
+                            Fluxo da gameplay
+                        </h2>
+                        <img
+                            src={fluxoImg}
+                            alt="Fluxo de funcionamento da gameplay"
+                            className="h-auto w-full object-contain"
+                        />
+                    </section>
                 </div>
             </section>
         </div>
