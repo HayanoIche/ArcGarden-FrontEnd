@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LayoutBase from './layouts/LayoutBase.tsx';
-
+import ScrollToTop from './components/common/ScrollToTop.tsx';
 import Home from './pages/Home';
 import Contato from './pages/Contato';
 import Solucao from './pages/Solucao';
@@ -15,6 +15,7 @@ export default function App()
 {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route element={<LayoutBase />}>
           <Route path="/" element={<Home />} />
