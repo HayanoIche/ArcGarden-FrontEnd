@@ -3,7 +3,16 @@ import fotoIgor from '../assets/integrantes/igor.jpeg';
 import fotoMarcela from '../assets/integrantes/marcela.jpeg';
 import fotoMatheus from '../assets/integrantes/matheus.jpeg';
 
-const integrantes = [
+interface Membro {
+  nome: string;
+  rm: string;
+  turma: string;
+  foto: string;
+  linkedin: string;
+  github: string;
+}
+
+const integrantes: Membro[] = [
   {
     nome: "Franco Jared Marquina Blas",
     rm: "572901",
@@ -41,13 +50,13 @@ const integrantes = [
 export default function Integrantes() {
   return (
     <div className="flex flex-col items-center py-20 px-6 w-full bg-[var(--bg-main)] pb-40">
-      <span className="bg-[var(--g1)] text-[var(--g4)] text-sm font-bold px-4 py-1 rounded-full mb-4">
+      <span className="bg-[var(--g1)] text-[var(--g4)] text-sm font-bold px-4 py-1 rounded-full mb-4 font-spectral">
         Nossa equipe
       </span>
       <h2 className="font-bold text-[var(--text-bold)] text-3xl lg:text-5xl mb-2 text-center">
         Conheça os integrantes do <em className="font-spectral italic text-[var(--g3)]">Arcgarden</em>
       </h2>
-      <p className="font-medium text-[var(--text-main)] max-w-2xl text-center mb-14">
+      <p className="font-medium text-[var(--text-main)] max-w-2xl text-center mb-14 font-spectral">
         Quem faz o projeto acontecer no dia a dia
       </p>
       
@@ -62,10 +71,10 @@ export default function Integrantes() {
               alt={`Foto de ${membro.nome}`}
               className="w-36 h-36 rounded-full object-cover mb-6 border-2 border-[var(--g1)] shadow-inner"
             />
-            <h3 className="font-bold text-[var(--text-bold)] text-xl mb-2 text-center">
+            <h3 className="font-bold text-[var(--text-bold)] text-xl mb-2 text-center font-spectral">
               {membro.nome}
             </h3>
-            <span className="text-xs font-semibold text-[var(--g3)] bg-[var(--g1)] px-3 py-1 rounded-full mb-6">
+            <span className="text-xs font-semibold text-[var(--g3)] bg-[var(--g1)] px-3 py-1 rounded-full mb-6 font-spectral">
               {membro.turma} • RM {membro.rm}
             </span>
 
@@ -74,7 +83,7 @@ export default function Integrantes() {
                 href={membro.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[var(--g3)] transition-colors no-underline"
+                className="hover:text-[var(--g3)] transition-colors no-underline font-spectral"
               >
                 LinkedIn
               </a>
@@ -83,7 +92,7 @@ export default function Integrantes() {
                 href={membro.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[var(--g3)] transition-colors no-underline"
+                className="hover:text-[var(--g3)] transition-colors no-underline font-spectral"
               >
                 GitHub
               </a>
