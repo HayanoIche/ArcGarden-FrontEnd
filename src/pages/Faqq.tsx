@@ -48,7 +48,7 @@ export default function Faq() {
   return (
     <div className="flex flex-col items-center w-full bg-[var(--bg-main)]">
       <section className="flex flex-col items-center py-16 px-6 w-full box-border max-w-4xl">
-        <span className="bg-[var(--g1)] text-[var(--g4)] text-sm font-bold px-4 py-1 rounded-full mb-4">
+        <span className="bg-[var(--g1)] text-[var(--g4)] text-sm font-bold px-4 py-1 rounded-full mb-4 font-spectral">
           Tire suas dúvidas
         </span>
 
@@ -61,7 +61,7 @@ export default function Faq() {
           </em>
         </h2>
 
-        <p className="font-bold text-[var(--text-main)] max-w-2xl text-center mb-10">
+        <p className="font-bold text-[var(--text-main)] max-w-2xl text-center mb-10 font-spectral">
           Tudo o que você precisa saber sobre o Arcgarden
         </p>
 
@@ -77,17 +77,17 @@ export default function Faq() {
       </section>
 
       <section className="flex flex-col items-center gap-2 w-full bg-[var(--g1)] py-12 px-6 text-center">
-        <h3 className="text-2xl font-bold text-[var(--text-bold)]">
+        <h3 className="text-2xl font-bold text-[var(--text-bold)] font-spectral">
           Ainda tem dúvidas?
         </h3>
 
-        <p className="text-[var(--text-main)] font-semibold mb-2">
+        <p className="text-[var(--text-main)] font-semibold mb-2 font-spectral">
           Entre em contato com a nossa equipe
         </p>
 
         <Link
           to="/contato"
-          className="rounded-xl bg-[var(--g4)] px-6 py-3 font-semibold text-white transition-colors hover:bg-[var(--g5)]"
+          className="rounded-xl bg-[var(--g4)] px-6 py-3 font-semibold text-white transition-colors hover:bg-[var(--g5)] font-spectral"
         >
           Ir para contato
         </Link>
