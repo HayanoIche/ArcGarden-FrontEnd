@@ -4,19 +4,36 @@ import fluxoImg from '../assets/solução/fluxo.png';
 
 const LIMITE_MISSOES = 3;
 const AGUA_POR_MISSAO = 20;
+const CUSTO_PACOTE = 15;
+const AGUA_POR_PACOTE = 8;
+const CUSTO_REGAR = 15;
 
 export default function Solucao()
 {
     const [agua, setAgua] = useState(0);
     const [missoesReclamadas, setMissoesReclamadas] = useState(0);
-    const [pacotesUsados] = useState(0);
-    const [regas] = useState(0);
+    const [pacotesUsados, setPacotesUsados] = useState(0);
+    const [regas, setRegas] = useState(0);
 
     function reclamarMissao() {
         if (missoesReclamadas >= LIMITE_MISSOES) return;
 
         setMissoesReclamadas((quantidade) => quantidade + 1);
         setAgua((quantidade) => quantidade + AGUA_POR_MISSAO);
+    }
+
+    function comprarEUsarPacote() {
+        if (agua < CUSTO_PACOTE) return;
+
+        setAgua((quantidade) => quantidade - CUSTO_PACOTE + AGUA_POR_PACOTE);
+        setPacotesUsados((quantidade) => quantidade + 1);
+    }
+
+    function regarPlanta() {
+        if (agua < CUSTO_REGAR) return;
+
+        setAgua((quantidade) => quantidade - CUSTO_REGAR);
+        setRegas((quantidade) => quantidade + 1);
     }
 
     return (
@@ -37,11 +54,41 @@ export default function Solucao()
 
             <section className="mx-auto grid w-full max-w-6xl grid-cols-1 items-start gap-8 px-6 pb-24 sm:grid-cols-2">
                 <div className="flex justify-center">
-                    <img
-                        src={uiImg}
-                        alt="Exemplo da interface do jogo com uma planta"
-                        className="h-auto w-full max-w-xs object-contain"
-                    />
+                    <div
+                        className="relative w-full max-w-xs overflow-hidden rounded-2xl border-2 border-[var(--g1)] shadow-lg"
+                        style={{ aspectRatio: '1 / 2' }}
+                    >
+                        <img
+                            src={uiImg}
+                            alt="Jogo do Arcgarden com uma planta, botão para regar e botão de pacote"
+                            className="absolute inset-0 h-full w-full object-fill"
+                        />
+
+                        <output
+                            aria-label={`Pontos de água no jogo: ${agua}`}
+                            className="absolute right-[5%] top-[3%] flex h-[6%] w-[18%] items-center justify-center bg-[#294d25] font-mono text-lg font-bold leading-none text-[#b8d295]"
+                        >
+                            {agua}
+                        </output>
+
+                        <button
+                            type="button"
+                            onClick={regarPlanta}
+                            disabled={agua < CUSTO_REGAR}
+                            aria-label={`Regar planta; custa ${CUSTO_REGAR} pontos de água`}
+                            title={`Regar planta (-${CUSTO_REGAR} pontos de água)`}
+                            className="absolute bottom-[1%] left-0 h-[13%] w-[64%] cursor-pointer rounded-bl-2xl focus-visible:outline focus-visible:outline-4 focus-visible:outline-yellow-300 disabled:cursor-not-allowed"
+                        />
+
+                        <button
+                            type="button"
+                            onClick={comprarEUsarPacote}
+                            disabled={agua < CUSTO_PACOTE}
+                            aria-label={`Comprar e usar um pacote; custa ${CUSTO_PACOTE} pontos e devolve ${AGUA_POR_PACOTE}`}
+                            title={`Usar pacote (-${CUSTO_PACOTE}, +${AGUA_POR_PACOTE} pontos de água)`}
+                            className="absolute bottom-[1%] right-[1%] h-[13%] w-[23%] cursor-pointer rounded-br-2xl focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-[-6px] focus-visible:outline-yellow-300 disabled:cursor-not-allowed"
+                        />
+                    </div>
                 </div>
 
                 <div className="flex flex-col gap-3">
