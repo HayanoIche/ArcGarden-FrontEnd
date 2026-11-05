@@ -1,8 +1,24 @@
+import { useState } from 'react';
 import uiImg from '../assets/solução/ui.png';
 import fluxoImg from '../assets/solução/fluxo.png';
 
+const LIMITE_MISSOES = 3;
+const AGUA_POR_MISSAO = 20;
+
 export default function Solucao()
 {
+    const [agua, setAgua] = useState(0);
+    const [missoesReclamadas, setMissoesReclamadas] = useState(0);
+    const [pacotesUsados] = useState(0);
+    const [regas] = useState(0);
+
+    function reclamarMissao() {
+        if (missoesReclamadas >= LIMITE_MISSOES) return;
+
+        setMissoesReclamadas((quantidade) => quantidade + 1);
+        setAgua((quantidade) => quantidade + AGUA_POR_MISSAO);
+    }
+
     return (
         <div className="flex flex-col items-center w-full">
             <section className="flex flex-col items-center w-full box-border px-6 pt-20 pb-14 text-center">
@@ -30,15 +46,21 @@ export default function Solucao()
 
                 <div className="flex flex-col gap-3">
                     <section className="rounded-lg border border-[var(--g1)] bg-white px-4 py-3">
-                        <p className="text-sm text-[var(--text-main)]">Pontos de água: 0</p>
-                        <p className="text-sm text-[var(--text-main)]">Pacotes usados: 0</p>
-                        <p className="text-sm text-[var(--text-main)]">Regas realizadas: 0</p>
+                        <p className="text-sm text-[var(--text-main)]">Pontos de água: {agua}</p>
+                        <p className="text-sm text-[var(--text-main)]">Pacotes usados: {pacotesUsados}</p>
+                        <p className="text-sm text-[var(--text-main)]">Regas realizadas: {regas}</p>
                     </section>
 
                     <section className="rounded-lg border border-[var(--g1)] bg-white px-4 py-3">
                         <p className="text-sm font-bold text-[var(--text-bold)]">
-                            Missões reclamadas: 0/3
+                            Missões reclamadas: {missoesReclamadas}/3
                         </p>
+                        <button type="button" onClick={reclamarMissao} disabled={missoesReclamadas >= LIMITE_MISSOES}
+                            className="mt-3 rounded-md bg-[var(--g4)] px-4 py-2 text-sm font-bold text-white disabled:cursor-not-allowed disabled:opacity-50">
+                            {missoesReclamadas >= LIMITE_MISSOES
+                                ? 'Limite atingido'
+                                : `Reclamar missão (+${AGUA_POR_MISSAO})`}
+                        </button>
                     </section>
 
                     <section className="rounded-lg border border-[var(--g1)] bg-white p-4">
