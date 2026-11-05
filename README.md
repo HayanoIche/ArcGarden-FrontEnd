@@ -20,12 +20,16 @@ outros.
 
 https://arc-garden-theta.vercel.app/
 
+## Link do vídeo (Youtube)
+
+https://youtu.be/tMTzEjq0m5E
+
 ## TECNOLOGIAS
 
 
 ### SITE
 No front-end do projeto foram utilizados React para estrutura do projeto, Tailwind CSS pra estilização e Typescript para programação.
-Vite como ferramenta de build e React Router para
+Vite como ferramenta de build e React Router para o gerenciamento das rotas.
 
 ### DESIGN
 Também foram utilizados para o design o Figma, e para os elementos visuais Pixel-Art foi usado o ASEPRITE.
@@ -47,7 +51,7 @@ No projeto estão separados nas pastas
 
 ## Autores do Arcgarden
 
-![AUTORES](src/assets/integrantes/integrantes.jpeg)
+![AUTORES](src/assets/integrantes/integrantes.png)
 
 links das redes sociais:
 
