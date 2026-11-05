@@ -54,14 +54,16 @@ export default function Wiki() {
     );
   }
 
-  if (error) {
+ if (error) {
     return (
-      <div role="alert">
+      <div
+        role="alert"
+        className="flex items-center justify-center min-h-screen px-6 text-center text-xl font-bold text-[var(--text-bold)] bg-[var(--bg-main)]"
+      >
         {error}
       </div>
     );
   }
-
 
   return (
     <div className="flex flex-col items-center py-16 px-6 w-full bg-[var(--bg-main)] min-h-screen">
