@@ -92,7 +92,7 @@ export default function Solucao()
                 </div>
 
                 <div className="flex flex-col gap-3">
-                    <section className="rounded-lg border border-[var(--g1)] bg-white px-4 py-3">
+                    <section className="flex flex-col gap-2 rounded-lg border border-[var(--g1)] bg-white px-4 py-3">
                         <p className="text-sm text-[var(--text-main)]">Pontos de água: {agua}</p>
                         <p className="text-sm text-[var(--text-main)]">Pacotes usados: {pacotesUsados}</p>
                         <p className="text-sm text-[var(--text-main)]">Regas realizadas: {regas}</p>
